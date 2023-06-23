@@ -41,7 +41,7 @@ const Home = () => {
 
   const deleteData = async (id) => {
     const deleted = await fetch(
-      `/delete/${id}`,
+      `https://users-info-uzyg.onrender.com/delete/${id}`,
       {
         method: "DELETE",
         headers: {
@@ -62,7 +62,7 @@ const Home = () => {
       getInput();
     }
     const search = await fetch(
-      `/search/${key}`,
+      `https://users-info-uzyg.onrender.com/search/${key}`,
       {
         method: "GET",
         headers: {
