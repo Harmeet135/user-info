@@ -46,7 +46,7 @@ const Details = () => {
 
   const deleteData = async (id) => {
     const deleted = await fetch(
-      `/delete/${id}`,
+      `https://users-info-uzyg.onrender.com/delete/${id}`,
       {
         method: "DELETE",
         headers: {
