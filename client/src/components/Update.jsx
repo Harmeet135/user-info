@@ -12,7 +12,6 @@ const Update = () => {
   });
 
   const setdata = (e) => {
-    // console.log(e.target.value);
     const { name, value } = e.target;
     setInpval((prevState) => {
       return {
@@ -26,7 +25,7 @@ const Update = () => {
 
   const getInput = async (e) => {
     const res = await fetch(
-      `/getdata/${id}`,
+      `https://users-info-uzyg.onrender.com/getdata/${id}`,
       {
         method: "GET",
         headers: {
@@ -52,9 +51,9 @@ const Update = () => {
 
   const updated = async (e) => {
     e.preventDefault();
-    const { name, email, age, mobile, work, salary, desc } = inpval;
+    const { name, email, mobile} = inpval;
     const res2 = await fetch(
-      `/update/${id}`,
+      `https://users-info-uzyg.onrender.com/update/${id}`,
       {
         method: "PATCH",
         body: JSON.stringify({
