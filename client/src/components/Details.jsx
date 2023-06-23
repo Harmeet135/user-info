@@ -20,7 +20,7 @@ const Details = () => {
 
   const getInput = async (e) => {
     const res = await fetch(
-      `/getdata/${id}`,
+      `https://users-info-uzyg.onrender.com/getdata/${id}`,
       {
         method: "GET",
         headers: {
