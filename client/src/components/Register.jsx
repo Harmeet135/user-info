@@ -14,7 +14,6 @@ const Register = () => {
   });
 
   const setdata = (e) => {
-    // console.log(e.target.value);
     const { name, value } = e.target;
     setInpval((prevState) => {
       return {
@@ -33,7 +32,7 @@ const Register = () => {
       return;
     }
 
-    const res = await fetch("/register", {
+    const res = await fetch("https://users-info-uzyg.onrender.com/register", {
       method: "POST",
       body: JSON.stringify({
         name,
